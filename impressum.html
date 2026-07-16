@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impressum — TopFindsDE</title>
+  <meta name="description" content="Impressum von TopFindsDE.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://www.topfindsde.de/impressum.html">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,340;9..144,420;9..144,560&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      var t = localStorage.getItem("tf-theme") ||
+        (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.dataset.theme = t;
+    })();
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav is-scrolled" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="TopFindsDE — Startseite">
+        <span class="nav__monogram" aria-hidden="true">TF</span>
+        <span class="nav__wordmark">TopFinds<em>DE</em></span>
+      </a>
+      <nav class="nav__links" aria-label="Hauptnavigation">
+        <a href="index.html#kategorien">Kategorien</a>
+        <a href="index.html#bestseller">Bestseller</a>
+        <a href="index.html#neu">Neu entdeckt</a>
+      </nav>
+      <div class="nav__actions">
+        <a class="btn btn--ghost" href="index.html">Zur Startseite</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="legal">
+    <h1>Impressum</h1>
+
+    <p class="todo">Wichtig: Trage hier deine echten Daten ein, bevor die Seite online geht.
+    Ein vollständiges Impressum ist in Deutschland gesetzlich vorgeschrieben (§ 5 DDG).</p>
+
+    <h2>Angaben gemäß § 5 DDG</h2>
+    <p>
+      [Vor- und Nachname]<br>
+      [Straße und Hausnummer]<br>
+      [PLZ und Ort]<br>
+      Deutschland
+    </p>
+
+    <h2>Kontakt</h2>
+    <p>
+      E-Mail: kontakt@topfindsde.de<br>
+      Telefon: [Telefonnummer]
+    </p>
+
+    <h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
+    <p>
+      [Vor- und Nachname]<br>
+      [Anschrift wie oben]
+    </p>
+
+    <h2>Hinweis zu Affiliate-Links</h2>
+    <p>
+      TopFindsDE nimmt am Amazon-Partnerprogramm teil. Als Amazon-Partner verdienen wir an
+      qualifizierten Verkäufen. Links zu Amazon sind entsprechend als Affiliate-Links
+      gekennzeichnet; für Käufer entstehen dadurch keine Mehrkosten.
+    </p>
+
+    <h2>Streitschlichtung</h2>
+    <p>
+      Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit.
+      Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer
+      Verbraucherschlichtungsstelle teilzunehmen.
+    </p>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__copy">© <span id="year"></span> TopFindsDE. Alle Rechte vorbehalten.</p>
+  </footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
