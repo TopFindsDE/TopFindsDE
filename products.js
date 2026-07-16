@@ -50,10 +50,10 @@ const PRODUCTS = [
     category: "haushalt"
   },
   {
-    title: "Smarte LED-Lichtleisten",
-    description: "Warmes Ambientelicht per App oder Sprache. Verwandelt jeden Raum in Sekunden.",
-    image: "images/products/lichtleiste.jpg",
-    link: "https://amzn.to/BEISPIEL-4",
+    title: "Amazon Fire TV Stick HD",
+    description: "Anzeige | Enthält Affiliate-Link Mit dem Fire TV Stick HD streamst du Netflix, Prime Video, YouTube und viele weitere Apps auf deinem Fernseher. Entdecke alle Funktionen über den Link.",
+    image: "images/products/firetv.jpg",
+    link: "https://amzn.to/3RcT0nd",
     category: "smarthome",
     featured: true
   },
