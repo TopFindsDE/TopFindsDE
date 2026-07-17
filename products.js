@@ -26,28 +26,28 @@
 
 const PRODUCTS = [
   {
-    title: "Kabellose Noise-Cancelling Kopfhörer",
-    description: "Studioklang ohne Kabel. Aktive Geräuschunterdrückung, 40 Stunden Akku und ein Tragegefühl, das man nach Minuten vergisst.",
-    image: "images/products/kopfhoerer.jpg",
-    link: "https://amzn.to/BEISPIEL-1",
-    category: "technik",
+    title: "Alexa Echo Dot",
+    description: "Anzeige | Enthält Affiliate-Link Der Amazon Echo Dot bringt Alexa in dein Zuhause. Musik abspielen, Timer stellen, Smart-Home-Geräte steuern und vieles mehr – alles per Sprachbefehl. Entdecke jetzt die neueste Generation!",
+    image: "images/products/echo.jpg",
+    link: "https://amzn.to/3R3KarU",
+    category: "smarthome",
     featured: true,
     pick: true
   },
   {
-    title: "Mechanische Gaming-Tastatur",
-    description: "Präzise Hot-Swap-Switches, dezente Beleuchtung und ein Anschlag, der jede Session besser macht.",
-    image: "images/products/tastatur.jpg",
-    link: "https://amzn.to/BEISPIEL-2",
-    category: "gaming",
+    title: "Amazon Kindle Paperwhite",
+    description: "📚 Anzeige | Enthält Affiliate-Links Lies tausende Bücher auf einem leichten, blendfreien Display – egal ob zuhause, im Urlaub oder unterwegs. Der Kindle Paperwhite überzeugt mit langer Akkulaufzeit, wasserfestem Design und angenehmem Lesen bei Tag und Nacht.",
+    image: "images/products/kindle.jpg",
+    link: "https://amzn.to/4wfDarg",
+    category: "smarthome",
     featured: true
   },
   {
-    title: "Akku-Handstaubsauger",
-    description: "Kraftvoll, leise, in Sekunden griffbereit. Für Krümel, Auto und alles dazwischen.",
-    image: "images/products/handstaubsauger.jpg",
-    link: "https://amzn.to/BEISPIEL-3",
-    category: "haushalt"
+    title: "3 in 1 Ladestation Magsafe",
+    description: "Anzeige | Enthält Affiliate-Links Schluss mit Kabelchaos! Diese hochwertige 3-in-1 MagSafe Ladestation lädt dein iPhone, deine Apple Watch und deine AirPods gleichzeitig – stilvoll und platzsparend. Perfekt für Homeoffice, Nachttisch oder Schreibtisch. Mit 15 W kabelloser Ladeleistung, starkem Magnet-Halt und kompaktem Design ist sie das ideale Zubehör für Apple-Nutzer. Jetzt entdecken!",
+    image: "images/products/3in1.jpg",
+    link: "https://amzn.to/4bxb3eB",
+    category: "smarthome"
   },
   {
     title: "Amazon Fire TV Stick HD",
@@ -58,11 +58,11 @@ const PRODUCTS = [
     featured: true
   },
   {
-    title: "Kompressor-Luftpumpe fürs Auto",
-    description: "Reifendruck prüfen und korrigieren — kabellos, mit Display, in unter zwei Minuten.",
-    image: "images/products/luftpumpe.jpg",
-    link: "https://amzn.to/BEISPIEL-5",
-    category: "auto"
+    title: "Ninja Dual Zone Digital Air Fryer",
+    description: "Anzeige | Enthält Affiliate-Links Mehr Möglichkeiten in deiner Küche! Die Ninja Dual Zone Air Fryer mit zwei separaten Garkörben ermöglicht es dir, unterschiedliche Speisen gleichzeitig zuzubereiten – ideal für Familien, Meal Prep oder stressfreie Abendessen. Knusprige Ergebnisse mit wenig Öl und vielseitige Programme machen sie zu einem echten Küchenhelfer. Jetzt entdecken!",
+    image: "images/products/fryer.jpg",
+    link: "https://amzn.to/3TrcZ25",
+    category: "kueche"
   },
   {
     title: "Ergonomischer Bürostuhl",
