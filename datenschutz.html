@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Datenschutz — TopFindsDE</title>
+  <meta name="description" content="Datenschutzerklärung von TopFindsDE.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://www.topfindsde.de/datenschutz.html">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,340;9..144,420;9..144,560&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      var t = localStorage.getItem("tf-theme") ||
+        (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.dataset.theme = t;
+    })();
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav is-scrolled" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="TopFindsDE — Startseite">
+        <span class="nav__monogram" aria-hidden="true">TF</span>
+        <span class="nav__wordmark">TopFinds<em>DE</em></span>
+      </a>
+      <nav class="nav__links" aria-label="Hauptnavigation">
+        <a href="index.html#kategorien">Kategorien</a>
+        <a href="index.html#bestseller">Bestseller</a>
+        <a href="index.html#neu">Neu entdeckt</a>
+      </nav>
+      <div class="nav__actions">
+        <a class="btn btn--ghost" href="index.html">Zur Startseite</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="legal">
+    <h1>Datenschutzerklärung</h1>
+
+    <h2>1. Verantwortlicher</h2>
+    <p>
+      Marvin Herrmann<br>
+      Eichendorffstraße 39<br>
+      45739 Oer-Erkenschwick<br>
+      E-Mail: <span id="mail-ds">[Bitte JavaScript aktivieren]</span>
+    </p>
+    <script>
+      (function () {
+        var a = "marv.herrmann" + "@" + "googlemail" + "." + "com";
+        document.getElementById("mail-ds").innerHTML =
+          '<a href="mailto:' + a + '">' + a + "</a>";
+      })();
+    </script>
+
+    <h2>2. Hosting und Server-Logfiles</h2>
+    <p>
+      Beim Aufruf dieser Website verarbeitet unser Hosting-Anbieter GitHub Inc. (GitHub&nbsp;Pages, 88 Colin P. Kelly Jr. St., San Francisco, CA 94107, USA)
+      automatisch Informationen in sogenannten Server-Logfiles (IP-Adresse, Datum und
+      Uhrzeit, aufgerufene Seite, Browsertyp). Die Verarbeitung erfolgt auf Grundlage von
+      Art. 6 Abs. 1 lit. f DSGVO zur Sicherstellung eines störungsfreien Betriebs.
+    </p>
+
+    <h2>3. Externe Schriftarten (Google Fonts)</h2>
+    <p>
+      Diese Website lädt Schriftarten von Google Fonts. Dabei wird deine IP-Adresse an
+      Server von Google übertragen. Wenn du das vermeiden möchtest, können die Schriften
+      alternativ lokal im Ordner <code>fonts/</code> eingebunden werden.
+    </p>
+
+    <h2>4. Affiliate-Links (Amazon-Partnerprogramm)</h2>
+    <p>
+      TopFindsDE nimmt am Amazon-Partnerprogramm teil. Klickst du auf einen mit
+      „Jetzt ansehen" gekennzeichneten Link, wirst du zu Amazon weitergeleitet. Amazon
+      setzt dabei Cookies, um die Vermittlung zuzuordnen. Details findest du in der
+      Datenschutzerklärung von Amazon.
+    </p>
+
+    <h2>5. Newsletter</h2>
+    <p>
+      Der Newsletter befindet sich derzeit im Aufbau. Über das Formular auf der Startseite
+      werden aktuell keine Daten übertragen oder gespeichert. Sobald der Newsletter startet,
+      erfolgt die Verarbeitung deiner E-Mail-Adresse ausschließlich für den Versand auf
+      Grundlage deiner Einwilligung (Art. 6 Abs. 1 lit. a DSGVO), mit Abmeldemöglichkeit in
+      jeder E-Mail; diese Erklärung wird dann um den eingesetzten Versanddienstleister ergänzt.
+    </p>
+
+    <h2>6. Lokale Speicherung (Dark Mode)</h2>
+    <p>
+      Deine Auswahl zwischen hellem und dunklem Design wird ausschließlich lokal in deinem
+      Browser gespeichert (localStorage) und nicht an uns übertragen.
+    </p>
+
+    <h2>7. Deine Rechte</h2>
+    <p>
+      Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der
+      Verarbeitung, Datenübertragbarkeit sowie Widerspruch (Art. 15–21 DSGVO). Außerdem
+      steht dir ein Beschwerderecht bei einer Datenschutz-Aufsichtsbehörde zu.
+    </p>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__copy">© <span id="year"></span> TopFindsDE. Alle Rechte vorbehalten.</p>
+  </footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
