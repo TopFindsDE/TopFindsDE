@@ -1095,3 +1095,23 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   .reveal, .reveal-line > span { opacity: 1; transform: none; filter: none; }
   .hero-card { opacity: .9; }
 }
+.empty-category{
+    width:100%;
+    padding:80px 30px;
+    text-align:center;
+    border-radius:24px;
+    border:1px solid var(--line);
+    background:var(--surface);
+}
+
+.empty-category h3{
+    font-size:32px;
+    margin-bottom:15px;
+}
+
+.empty-category p{
+    max-width:550px;
+    margin:auto;
+    line-height:1.7;
+    opacity:.75;
+}
