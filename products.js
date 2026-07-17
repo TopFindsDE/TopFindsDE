@@ -141,6 +141,14 @@ const PRODUCTS = [
     category: "buero",
     added: "2026-07-16",
     featured: true
+  },
+  {
+    title: "Anker 165W 25000 mAh Laptop Powerbank",
+    description: "Mit dieser leistungsstarken Powerbank von Anker bleiben deine Geräte auch unterwegs zuverlässig geladen. Dank hoher Kapazität, integriertem USB-C-Kabel und mehreren Ladeanschlüssen eignet sie sich ideal für Reisen, Arbeit oder den Alltag. Eine praktische Lösung für alle, die viel unterwegs sind. Hinweis: Dieser Beitrag enthält Affiliate-Links. Wenn du über einen dieser Links einkaufst, erhalte ich möglicherweise eine kleine Provision. Für dich entstehen keine zusätzlichen Kosten.",
+    image: "images/products/powerbank.jpg",
+    link: "https://amzn.to/4wN1Hnh",
+    category: "technik",
+    added: "2026-07-17"
   }
 ];
 
