@@ -189,24 +189,34 @@
   /* ============ 05 · KATEGORIEN ============ */
 
   const buildCategories = () => {
-    const grid = $("#categoryGrid");
-    if (!grid) return;
+  const row = $("#filterRow");
+  if (!row) return;
 
-    CATEGORIES.forEach((cat, i) => {
-      const card = document.createElement("a");
-      card.className = "cat-card reveal";
-      card.href = "#neu";
-      card.style.setProperty("--stagger", `${(i % 4) * 0.07}s`);
-      card.setAttribute("aria-label", `Kategorie ${cat.name} ansehen`);
-      card.innerHTML = `
-        <span class="cat-card__icon">${categoryIcon(cat.slug)}</span>
-        <span class="cat-card__label">${cat.name} ${ARROW_SVG}</span>`;
+  row.innerHTML = "";
 
-      /* Klick: zur "Neu entdeckt"-Sektion springen und dort filtern */
-      card.addEventListener("click", () => activateFilter(cat.slug));
-      grid.appendChild(card);
+  const chips = [
+    { slug: "alle", name: "Alle" },
+    ...CATEGORIES
+  ];
+
+  chips.forEach((cat) => {
+    const chip = document.createElement("button");
+    chip.className =
+      "filter-chip" +
+      (cat.slug === activeFilter ? " is-active" : "");
+
+    chip.type = "button";
+    chip.setAttribute("role", "tab");
+    chip.dataset.slug = cat.slug;
+    chip.textContent = cat.name;
+
+    chip.addEventListener("click", () => {
+      activateFilter(cat.slug);
     });
-  };
+
+    row.appendChild(chip);
+  });
+};
 
   /* ============ 06 · BESTSELLER-SLIDER ============ */
 
@@ -240,10 +250,23 @@
     if (!grid) return;
     grid.innerHTML = "";
 
-    const items = activeFilter === "alle"
-      ? PRODUCTS
-      : PRODUCTS.filter((p) => p.category === activeFilter);
+    const items =
+  activeFilter === "alle"
+    ? PRODUCTS
+    : PRODUCTS.filter((p) => p.category === activeFilter);
 
+if (items.length === 0) {
+  grid.innerHTML = `
+    <div class="empty-category">
+      <h3>🚀 Bald verfügbar</h3>
+      <p>
+        Für diese Kategorie werden gerade neue Produkte vorbereitet.
+      </p>
+    </div>
+  `;
+  return;
+}
+     
     items.forEach((p, i) => {
       const card = productCard(p);
       card.style.setProperty("--stagger", `${(i % 3) * 0.08}s`);
@@ -278,13 +301,17 @@
   };
 
   const activateFilter = (slug) => {
-    /* Kategorien ohne Produkte fallen elegant auf "Alle" zurück */
-    if (slug !== "alle" && !PRODUCTS.some((p) => p.category === slug)) slug = "alle";
-    activeFilter = slug;
-    $$(".filter-chip").forEach((chip) =>
-      chip.classList.toggle("is-active", chip.dataset.slug === slug));
-    buildMasonry();
-  };
+  activeFilter = slug;
+
+  $$(".filter-chip").forEach((chip) =>
+    chip.classList.toggle(
+      "is-active",
+      chip.dataset.slug === slug
+    )
+  );
+
+  buildMasonry();
+};
 
   /* ============ 08 · EDITORIAL-EMPFEHLUNGEN ============ */
 
@@ -523,3 +550,4 @@
     init();
   }
 })();
+
