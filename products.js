@@ -73,49 +73,57 @@ const PRODUCTS = [
     pick: true
   },
   {
-    title: "Edelstahl-Isolierflasche",
-    description: "Hält 24 Stunden kalt, 12 Stunden heiß. Dicht, elegant, unverwüstlich.",
-    image: "images/products/isolierflasche.jpg",
-    link: "https://amzn.to/BEISPIEL-7",
-    category: "outdoor",
+    title: "Shark StainStriker Fleckenreiniger",
+    description: "Anzeige | Enthält Affiliate-Links Verabschiede dich von hartnäckigen Flecken auf Teppichen, Polstern und Autositzen. Der Shark StainStriker entfernt Schmutz, Flüssigkeiten und Gerüche gründlich und eignet sich ideal für Familien, Haustierbesitzer und alle, die ihr Zuhause sauber halten möchten. Dank verschiedener Aufsätze erreichst du auch schwer zugängliche Stellen mühelos. Jetzt entdecken!",
+    image: "images/products/fleckenreiniger.jpg",
+    link: "https://amzn.to/4fahiY4",
+    category: "haushalt",
     featured: true
   },
   {
-    title: "Präzisions-Kaffeemühle",
-    description: "40 Mahlgrade von Espresso bis French Press. Der Unterschied, den man schmeckt.",
-    image: "images/products/kaffeemuehle.jpg",
-    link: "https://amzn.to/BEISPIEL-8",
-    category: "kueche",
+    title: "PHILIPS OneBlade Pro 360 Face & Body",
+    description: "Anzeige | Enthält Affiliate-Links Nur ein Gerät für Rasieren, Trimmen und Stylen – ganz ohne komplizierte Routine. Der Philips OneBlade Pro 360 passt sich den Gesichtskonturen an und eignet sich für Bart, Konturen und Körperpflege. Mit langer Akkulaufzeit, präzisem Trimmkamm und wasserfestem Design ist er der ideale Begleiter für die tägliche Pflege. Jetzt entdecken!",
+    image: "images/products/oneblade.jpg",
+    link: "https://amzn.to/4ytqTAU",
+    category: "haushalt",
     featured: true,
     pick: true
   },
   {
-    title: "Massagepistole mit 5 Aufsätzen",
-    description: "Tiefenwirksame Regeneration nach dem Training — leise genug fürs Wohnzimmer.",
-    image: "images/products/massagepistole.jpg",
-    link: "https://amzn.to/BEISPIEL-9",
+    title: "NOCO Boost GB40",
+    description: "Anzeige | Enthält Affiliate-Links Eine leere Autobatterie muss keine Reise mehr stoppen. Die NOCO Boost GB40 Starthilfe-Powerbank bringt viele Benzin- und Dieselfahrzeuge schnell wieder zum Laufen und dient zusätzlich als Powerbank für Smartphone & Co. Kompakt, leistungsstark und ideal für Auto, Motorrad oder Wohnmobil – ein praktischer Begleiter für jede Fahrt. Jetzt entdecken!",
+    image: "images/products/starthilfe.jpg",
+    link: "https://amzn.to/4fnkUom",
+    category: "auto"
+  },
+  {
+    title: "RENPHO Körperfettwaage mit Handsensoren",
+    description: "Anzeige | Enthält Affiliate-Links Erreiche deine Fitnessziele mit präzisen Körperdaten. Die RENPHO Körperfettwaage mit Handsensoren analysiert Gewicht, Körperfett, Muskelmasse, BMI und viele weitere Werte. Dank Bluetooth-App behältst du deine Fortschritte jederzeit im Blick – ideal für Fitness, Muskelaufbau und einen gesunden Lebensstil. Jetzt entdecken!",
+    image: "images/products/waage.jpg",
+    link: "https://amzn.to/4aYrvV9",
     category: "fitness"
   },
   {
-    title: "Automatischer Futterspender",
-    description: "Pünktliche Portionen, auch wenn du nicht zu Hause bist. Mit Kamera und App-Steuerung.",
+    title: "LEGO Botanicals Orchidee",
+    description: "Anzeige | Enthält Affiliate-Links Bringe zeitlose Eleganz in dein Zuhause! Die LEGO Botanicals Orchidee verbindet kreativen Bauspaß mit stilvoller Wohnraumdekoration. Perfekt als Geschenk oder dekorativer Blickfang für Wohnzimmer, Büro oder Schlafzimmer. Eine wunderschöne Alternative zu echten Pflanzen – ganz ohne Pflege. Jetzt entdecken!",
+    image: "images/products/orchidee.jpg",
+    link: "https://amzn.to/3T7H8DB",
+    category: "wohnideen & deko"
+  },
+  {
+    title: "PETLIBRO 5L Futterautomat für Katze mit APP",
+    description: "Anzeige | Enthält Affiliate-Links Sorge dafür, dass dein Haustier zuverlässig versorgt wird – auch wenn du unterwegs bist. Der PETLIBRO Futterautomat mit App-Steuerung, 5G-WLAN und individuell planbaren Mahlzeiten erleichtert den Alltag und unterstützt eine regelmäßige Fütterung. Ideal für Katzen und kleine Hunde. Jetzt entdecken!",
     image: "images/products/futterspender.jpg",
-    link: "https://amzn.to/BEISPIEL-10",
-    category: "haustiere"
+    link: "https://amzn.to/4wOWafN",
+    category: "haustiere",
+    featured: true
   },
-  {
-    title: "Beheizbare Jade-Gesichtsroller",
-    description: "Spa-Moment für zu Hause. Kühlt, strafft und entspannt in fünf Minuten.",
-    image: "images/products/gesichtsroller.jpg",
-    link: "https://amzn.to/BEISPIEL-11",
-    category: "beauty"
-  },
-  {
-    title: "Sternenhimmel-Projektor",
-    description: "Ein Geschenk, das jeden Raum verzaubert — Galaxien, Nebel und sanfte Wellen an der Decke.",
-    image: "images/products/projektor.jpg",
-    link: "https://amzn.to/BEISPIEL-12",
-    category: "geschenkideen",
+  { 
+    title: "PETLIBRO 5L Futterautomat für Katze mit APP",
+    description: "Anzeige | Enthält Affiliate-Links Arbeite schneller und komfortabler – egal ob im Homeoffice, Studium oder Büro. Die Logitech MX Master 3S überzeugt mit ergonomischem Design, präzisem 8K-DPI-Sensor, ultraschnellem MagSpeed-Scrollrad und anpassbaren Tasten. Ideal für kreative Projekte, Multitasking und produktives Arbeiten. Jetzt entdecken!",
+    image: "images/products/maus.jpg",
+    link: "https://amzn.to/3T6TifY",
+    category: "buero",
     featured: true
   }
 ];
@@ -135,5 +143,5 @@ const CATEGORIES = [
   { slug: "kueche",        name: "Küche" },
   { slug: "outdoor",       name: "Outdoor" },
   { slug: "buero",         name: "Büro" },
-  { slug: "geschenkideen", name: "Geschenkideen" }
+  { slug: "geschenkideen", name: "Wohnideen & Deko" }
 ];
