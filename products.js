@@ -65,11 +65,11 @@ const PRODUCTS = [
     category: "kueche"
   },
   {
-    title: "Ergonomischer Bürostuhl",
-    description: "Atmungsaktives Mesh, präzise Lordosenstütze. Acht Stunden sitzen, ohne es zu merken.",
-    image: "images/products/buerostuhl.jpg",
-    link: "https://amzn.to/BEISPIEL-6",
-    category: "buero",
+    title: "Krups Smart'n Light Wasserkocher",
+    description: "Anzeige | Enthält Affiliate-Links Genieße Tee und Kaffee immer bei der idealen Temperatur! ☕ Der KRUPS Smart'n Light Wasserkocher bietet fünf Temperaturstufen, ein modernes LED-Display und ein doppelwandiges Design für mehr Komfort und Sicherheit im Alltag. Perfekt für Kaffee-, Tee- und Matcha-Liebhaber. Jetzt entdecken!",
+    image: "images/products/wasserkocher.jpg",
+    link: "https://amzn.to/4wNzXig",
+    category: "kueche",
     pick: true
   },
   {
